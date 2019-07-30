@@ -1,0 +1,451 @@
+/*--------------------------------------------
+---------------- preset CSS ------------------
+--------------------------------------------*/
+@font-face{
+    font-family:'Glyphicons Halflings';
+    src:url(fonts/glyphicons-halflings-regular.eot);
+    src:url(fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(fonts/glyphicons-halflings-regular.woff) format('woff'),url(fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+@font-face{
+    font-family:'FontAwesome';
+    src:url('fonts/fontawesome-webfont.eot?v=4.7.0');
+    src:url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+}
+img{
+    width: 100%;
+}
+p:first-letter{
+    text-transform: uppercase;
+}
+.fa{
+    padding-right: 5px;
+}
+.btn-primary{
+    background: #F8F8F8;
+    border: 1px solid#333;
+    color: #333;
+}
+.btn-primary:hover{
+    background: #33990D;
+    border: 1px solid#33990D;
+}
+.title .carousel-control {
+    background: none;
+    margin-right: 25px;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    color: #333;
+}
+.title .glyphicon {
+    margin: 0;
+    padding: 0;
+}
+.womens_featured_img, .menz_featured_img {
+    margin: 0;
+    padding: 0;
+}
+.product img{
+    transition: .3s;
+}
+.product img:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+#product_modal .modal-footer{
+    text-align: left;
+}
+/*----------------------------------
+----------- header css -------------
+-----------------------------------*/
+.header_top {
+  padding: 0;
+  height: auto;
+  margin: 0;
+  background: #F8F8F8;
+}
+.header_top > div {
+  margin: 0;
+  padding: 0;
+}
+.latest_news {
+  overflow: hidden;
+  height: 25px;
+}
+.top_menu {
+  margin: 0;
+  padding: 0;
+}
+.top_menu nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  min-height: 25px;
+}
+.top_menu nav .container-fluid ul {
+  margin: 0;
+  padding: 0;
+}
+.top_menu nav ul li a {
+  padding: 0px 15px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.search_bar{
+  position: relative;
+}
+.search_bar .form-control {
+  border-radius: 0;
+  margin: -2px;
+  border: 0;
+  box-shadow: none;
+}
+.search_bar form {
+  position: relative;
+  border: 1px solid#E3E3E3; 
+  margin-top: 30px;
+  padding: 2px;
+}
+.cart{
+    margin-top: 15px;
+}
+.cart .fa {
+    font-size: 22px;
+    color: #666;
+    padding: 5px;
+    float: right;
+}
+.cart ul{
+    margin: 0;
+    padding: 0;
+}
+.cart ul li{
+    list-style: none;
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+.cart .fa-opencart:hover{
+    color: #60990D;
+}
+.cart .fa-heart-o:hover{
+    color: #AF6EAA;
+}
+.main_nav {
+    border: none;
+    border-radius: 0;
+    background: #F8F8F8;
+    margin: 0;
+    padding: 0;
+}
+.main_menu a{
+    text-transform: uppercase;
+}
+/*----------------------------------
+----------- slider css -------------
+-----------------------------------*/
+.slider img{
+    width: 100%;
+}
+.slider_text {
+    text-align: left;
+    left: 10%;
+    right: 50%;
+    bottom: 15%;
+}
+/*----------------------------------
+-------- category promo css---------
+-----------------------------------*/
+.category_promo{
+    margin: 30px 0px;
+}
+.category_promo div {
+    padding: 0;
+}
+.promo{
+    
+}
+.promo:hover img{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: .5s;
+}
+.promo_image{
+    overflow: hidden;
+}
+.promo .promo_image:before, .promo .promo_image:after {
+    bottom: 15px;
+    content: "";
+    left: 15px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 2;
+}
+.promo .promo_image:before {
+    transform: scale(0,1);
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.promo .promo_image:after {
+    transform: scale(1,0);
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+.promo:hover .promo_image:before, .promo:hover .promo_image:after {
+    transform: scale(1);
+    transition: all 0.5s ease-out 0s;
+}
+.promo_image img{
+    opacity: .8;
+    transition: .5s;
+}
+.promo_text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 10px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    left: 0;
+    right: 0;
+}
+.promo_text h4{
+    
+}
+.promo_text h2{
+    
+}
+
+/*----------------------------------
+---------- trending css ------------
+-----------------------------------*/
+.title nav a {
+    text-transform: uppercase;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 0;
+    padding-left: 0;
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+}
+.title nav a:hover {
+    color: #000;
+    background: none;
+}
+.trending_product .thumbnail{
+    margin: 0;
+    padding: 1px;
+}
+.trending_product .product_detail {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+    transition: .5s;
+    background: #B671AA;
+    margin: 15px;
+    padding: 10px 0px;
+}
+.trending_product .thumbnail:hover .product_detail{
+    display: block;
+    transition: .5s;
+}
+.trending_product .product_detail h3, .trending_product .product_detail h4{
+    margin: 0;
+    padding: 0;
+}
+.trending_product .product_detail h4 a{
+    color: #333;
+}
+.trending_product .product_detail h4 a, .trending_product .product_detail h4 a:hover{
+    text-decoration: none;
+}
+.trending_product .product_detail h4 a:hover{
+    color: #000;
+}
+
+.trending_product .thumbnail img{
+    height: 100%;
+    width: 100%;
+}
+.thumbnail img{
+    width: 200px;
+    height: 220px
+}
+
+/*-----------------------------------
+-------- menz featured css ----------
+-----------------------------------*/
+
+
+
+/*-----------------------------------
+---------- promo video css ----------
+-----------------------------------*/
+.promo_video iframe{
+    width: 100%;
+    min-height: 360px;
+    
+}
+
+
+/*-----------------------------------
+---------- category css -------------
+-----------------------------------*/
+
+
+
+/*-----------------------------------
+-------- womens featured css --------
+-----------------------------------*/
+
+
+
+/*----------------------------------
+------------- offer css ------------
+-----------------------------------*/
+.offer {
+    margin-top: 25px;
+}
+
+/*----------------------------------
+--------- new arrival css ----------
+-----------------------------------*/
+
+
+/*----------------------------------
+--------- accessories css ----------
+-----------------------------------*/
+
+
+/*----------------------------------
+------------ team css --------------
+-----------------------------------*/
+.member .thumbnail .row {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.member .thumbnail .row img{
+    width: 100%;
+    height: auto;
+}
+.member h4, .member hr, .member p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.member .container-fluid, .member .col-md-6,.member .col-md-6 .nav {
+    padding: 0;
+    margin: 0;
+}
+.member .navbar {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    min-height: 10px;
+}
+.member li > a {
+    padding: 2px;
+    margin: 0;
+}
+
+/*----------------------------------
+----------- special css ------------
+-----------------------------------*/
+
+
+/*----------------------------------
+--------- client area css ----------
+-----------------------------------*/
+.clients_area{
+    margin: 15px;
+    background:url(img/clients_bg.jpg)no-repeat fixed;
+    background-size: cover;
+    min-height: 220px;
+}
+
+/*-----------------------------------
+----------- fooret top css ----------
+-----------------------------------*/
+.footer_top {
+    background: #F8F8F8;
+    padding-top: 25px;
+}
+.services .fa{
+    font-size: 50px;
+    float: left;
+    padding-right: 10px;
+}
+.services h4{
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.services p{
+    margin: 0;
+    padding: 0;
+}
+.footer_widget a{
+    color:#333;
+}
+.footer_widget .navbar {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+}
+.footer_widget .navbar .nav li a {
+    padding: 0;
+}
+/*-------------------------------------
+---------- fooret bottom css ----------
+-------------------------------------*/
+.footer_bottom {
+    background: #EAEAEA;
+}
+.footer_bottom .container-fluid {
+    padding: 0;
+}
+.copyright p {
+    margin: 0;
+    padding: 4px 0px;
+    font-size: 11px;
+}
+.footer_bottom .navbar {
+    padding: 0;
+    background: none;
+    margin: 0;
+    min-height: 22px;
+}
+.footer_bottom .navbar ul li > a {
+    padding: 0;
+}
+
+.contact_form{
+    overflow: hidden;
+}
+.checkout{
+    margin: 25px 0px;
+}
+.checkout img{
+    width: 100px;
+}

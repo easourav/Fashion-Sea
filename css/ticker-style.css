@@ -1,0 +1,9 @@
+.ticker-wrapper.has-js {display: block;font-size: 0.75em;}
+.ticker {width: 100%;height: 25px;display: block;position: relative;overflow: hidden;}
+.ticker-title {padding-top: 5px;color: #00990D;font-weight: 600;text-transform: uppercase;}
+.ticker-content {font-weight: bold;overflow: hidden;white-space: nowrap;line-height: 1.2em;position: absolute;padding: 5px;}
+.ticker-content a {text-decoration: none;color: #AD4900;}
+.ticker-controls {list-style-type: none;float: left;}
+.js-hidden {display: none;}
+.no-js-news {padding: 10px 0px 0px 45px; }
+.left .ticker-controls, .left .ticker-content, .left .ticker-title, .left .ticker {float: left;}
